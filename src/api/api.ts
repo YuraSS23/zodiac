@@ -6,6 +6,7 @@ const settings = {
 
 export const instance = axios.create({
     baseURL: 'https://poker247tech.ru/',
+    ...settings
 })
 
 type postSingType = {
