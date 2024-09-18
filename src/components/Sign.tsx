@@ -12,12 +12,12 @@ type SignPropsType = {
 export const Sign = (props: SignPropsType) => {
     const [horoscope, setHoroscope] = useState<any>()
     const navigate = useNavigate()
-    /*useEffect(()=> {
+    useEffect(()=> {
         api.postSigns({sign: props.signEngName,
             language: 'translated',
             period: 'today'}
         ).then(data => setHoroscope(data))
-    })*/
+    })
     return (
         <div>
             <b>{props.signEngName}</b>
